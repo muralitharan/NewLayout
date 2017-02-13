@@ -55,7 +55,7 @@ class NTTransition : NSObject , UIViewControllerAnimatedTransitioning{
             
             UIView.animate(withDuration: animationDuration, animations: {
                 snapShot?.transform = CGAffineTransform.identity
-                snapShot?.frame = CGRect(x: leftUpperPoint.x, y: leftUpperPoint.y, width: (snapShot?.frame.size.width)!, height: (snapShot?.frame.size.height)!)
+                snapShot?.frame = CGRect(x: leftUpperPoint.x, y: leftUpperPoint.y + 5, width: (snapShot?.frame.size.width)!, height: (snapShot?.frame.size.height)!)
                 toView.transform = CGAffineTransform.identity
                 toView.frame = CGRect(x: 0, y: 0, width: toView.frame.size.width, height: toView.frame.size.height);
                 toView.alpha = 1
